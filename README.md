@@ -340,9 +340,48 @@ Q 67 :  Convert all customer names to lowercase.
 
  <img width="186" height="114" alt="image" src="https://github.com/user-attachments/assets/ed2a7c11-3573-4e67-a1dd-a85cb395f800" />
 
-Q 68 :  Find the length of each customer name. 
+Q 68 :  Find the length of each customer name = 
  select customer_name, length(customer_name) from sales ;
 
  <img width="191" height="153" alt="image" src="https://github.com/user-attachments/assets/a264ab78-75b2-461b-b38b-6b30c68a1725" />
 
 <img width="183" height="117" alt="image" src="https://github.com/user-attachments/assets/a6d1809d-c33a-437b-9d10-317eb37e0afe" />
+
+Q 69 : Find the length of each city name = 
+ select city, length(city) from sales ;
+
+ <img width="111" height="142" alt="image" src="https://github.com/user-attachments/assets/16192599-fe1b-400e-ab12-34fb9a26d046" />
+
+<img width="104" height="126" alt="image" src="https://github.com/user-attachments/assets/895be504-7680-4805-be05-f151824e1638" />
+
+ Q 70 : Combine customer name and city in one column = 
+ select concat(customer_name, '_', city) from sales ;
+
+ <img width="146" height="161" alt="image" src="https://github.com/user-attachments/assets/8a05478c-4fea-4462-ac1e-7b06641d5b80" />
+
+ <img width="135" height="115" alt="image" src="https://github.com/user-attachments/assets/8f399d28-be03-4745-abbd-376919198a40" />
+
+Q 71 : Replace the letter 'a' with '@' in customer names.
+ select replace(customer_name,'a','@') from sales ;
+
+ <img width="146" height="152" alt="image" src="https://github.com/user-attachments/assets/5fb4c351-7a0c-40dc-8893-b2c10c23cfa1" />
+
+ <img width="112" height="114" alt="image" src="https://github.com/user-attachments/assets/fe423768-5c37-424e-af83-4d0f69d1df16" />
+
+ Q 72 : Replace the letter 'e' with '*' in customer names. 
+ select replace(customer_name,'e','*') from sales ;
+
+ <img width="136" height="155" alt="image" src="https://github.com/user-attachments/assets/b30427e3-5d2a-49f0-b9ec-08f59e76666a" />
+
+ <img width="139" height="113" alt="image" src="https://github.com/user-attachments/assets/5a5285de-9e10-46de-b0ff-2d3b131e8013" />
+
+Q 73 : Remove extra spaces using TRIM(). 
+ select trim(sale_id), trim(customer_name), trim(gender) ,trim(age), trim(city) , trim(category), trim(product_name), trim(payment_mode), trim(quantity), trim(price), trim(rating),trim(order_date) from sales ;
+
+ <img width="458" height="140" alt="image" src="https://github.com/user-attachments/assets/d483e3d3-e051-46dc-b5ac-20a5ebe48295" />
+
+<img width="316" height="152" alt="image" src="https://github.com/user-attachments/assets/55786ae0-3c65-4f80-81c3-0744fdee84a8" />
+
+<img width="460" height="130" alt="image" src="https://github.com/user-attachments/assets/932b14e5-3238-4217-a0bd-4c4e0ab23403" />
+
+<img width="310" height="130" alt="image" src="https://github.com/user-attachments/assets/614e1a5f-1e28-44c9-b608-bb188ae99d88" />
