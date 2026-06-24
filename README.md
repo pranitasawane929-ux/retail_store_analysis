@@ -171,13 +171,13 @@ select * from sales order by price ASC;
 
  Q 32 :  Sort products by price in descending order.
 select * from sales order by price DESC;
-<img width="593" height="103" alt="Screenshot 2026-06-24 191437" src="https://github.com/user-attachments/assets/03480d05-8d16-4dbc-994c-eab529ddf8e2" />
 <img width="590" height="167" alt="Screenshot 2026-06-24 191352" src="https://github.com/user-attachments/assets/2c84620c-3926-4f49-9161-b90d92a1339e" />
+<img width="593" height="103" alt="Screenshot 2026-06-24 191437" src="https://github.com/user-attachments/assets/03480d05-8d16-4dbc-994c-eab529ddf8e2" />
 
 Q 33 :  Sort customers by age in ascending order. 
 select * from sales order by age ASC;
-<img width="591" height="104" alt="Screenshot 2026-06-24 191736" src="https://github.com/user-attachments/assets/229b31b9-caf3-4067-8b23-62fa2a925b57" />
 <img width="596" height="166" alt="Screenshot 2026-06-24 191700" src="https://github.com/user-attachments/assets/5853e1f9-7571-4c83-8528-30252e933d49" />
+<img width="591" height="104" alt="Screenshot 2026-06-24 191736" src="https://github.com/user-attachments/assets/229b31b9-caf3-4067-8b23-62fa2a925b57" />
 
 Q 34 :  Sort customers by age in descending order.
 select * from sales order by age DESC;
