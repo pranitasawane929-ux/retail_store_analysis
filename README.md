@@ -193,17 +193,156 @@ select * from sales order by rating DESC;
 select * from sales order by price DESC limit 1 ;
 <img width="584" height="38" alt="image" src="https://github.com/user-attachments/assets/183fa60b-8cfb-4047-9b4b-cbf0af7df895" />
 
+Q 37 : Display the lowest priced product.
+select * from sales order by price ASC limit 1 ;
+<img width="580" height="33" alt="image" src="https://github.com/user-attachments/assets/63aed5c4-c5e7-48ff-a87f-a9589acfcea7" />
 
+Q 38 : Display the highest rated product. 
+select * from sales order by rating DESC limit 1 ;
+<img width="588" height="34" alt="image" src="https://github.com/user-attachments/assets/85d3649c-18b6-4f30-befb-712a7837923f" />
 
+Q 39 :  Display the latest order. 
+select * from sales order by order_date DESC ; 
+<img width="596" height="153" alt="image" src="https://github.com/user-attachments/assets/06156d97-0538-4b79-9962-96b94753bc79" />
+<img width="593" height="114" alt="image" src="https://github.com/user-attachments/assets/5e177722-065b-47a2-8a82-99bdd9633f25" />
 
+ Q 40 :  Display the oldest order. 
+ select * from sales order by order_date ASC;
+ <img width="596" height="143" alt="image" src="https://github.com/user-attachments/assets/1f5f7911-1bb2-4f20-8ef8-789d93a5feb6" />
+ <img width="590" height="128" alt="image" src="https://github.com/user-attachments/assets/8a910b87-228a-42f3-a82c-97dddde2dad3" />
 
+Q 41 :  Display the top 5 records. 
+ select * from sales limit 5 ;
+ <img width="597" height="83" alt="image" src="https://github.com/user-attachments/assets/3e3166f1-f9e8-4d1a-868d-363ad816528e" />
 
+ Q 42 :  Display the top 3 most expensive products.
+ select * from sales order by price DESC limit 3;
+ <img width="587" height="56" alt="image" src="https://github.com/user-attachments/assets/3815cbc5-ebc5-43ac-92cc-1a5f6ef78940" />
 
+Q 43 : Display the top 5 highest rated products. 
+ select * from sales order by rating DESC limit 5 ;
+ <img width="592" height="80" alt="image" src="https://github.com/user-attachments/assets/8a010f90-99a1-4e69-8748-bf05c735d899" />
 
+Q 44 :  Display the second highest priced product. 
+ select * from sales order by price DESC limit 1 offset 1 ;
+ <img width="587" height="28" alt="image" src="https://github.com/user-attachments/assets/e4535a48-4ae1-4102-a0f9-eddcf04231ff" />
 
+ Q 45 : Display the third highest priced product. 
+ select * from sales order by price DESC limit 1 offset 2 ;
+ <img width="586" height="26" alt="image" src="https://github.com/user-attachments/assets/4eb5790f-f172-4dd9-8444-87f85264f3d0" />
 
+ Q 46 : Skip the first 5 rows and display the next records.
+ select * from sales limit 15 offset 5 ;
+ <img width="598" height="208" alt="image" src="https://github.com/user-attachments/assets/05a0f3e4-d061-401a-aead-3aa03741c467" />
 
+Q 47: Display rows 6 to 10. 
+ select * from sales limit 5 offset 5 ;
+ <img width="595" height="81" alt="image" src="https://github.com/user-attachments/assets/0f395781-020a-4ad8-847a-7a8aeffea28f" />
 
+Q 48 :  Display rows 11 to 15. 
+ select * from sales limit 5 offset 10 ;
+ <img width="596" height="78" alt="image" src="https://github.com/user-attachments/assets/164f2526-70fb-495b-b144-0170fbd2ee72" />
 
+Q 49 :  Display rows 16 to 20.
+ select * from sales limit 5 offset 15 ;
+ <img width="595" height="86" alt="image" src="https://github.com/user-attachments/assets/d85dec4f-cf1e-4f31-a56f-4eaceef0a29a" />
 
+ Q 50 :  Display the top 3 latest orders.
+ select * from sales order by order_date DESC limit 3 ;
+ <img width="596" height="54" alt="image" src="https://github.com/user-attachments/assets/e46da493-34c2-47bb-9e67-7b17e7f7b7e1" />
 
+Q 51 : Find the total number of orders.
+ select count(*) from sales ;
+
+ <img width="70" height="31" alt="image" src="https://github.com/user-attachments/assets/57b20331-e0b4-4efe-bfca-94964fd387ec" />
+
+Q 52 :  Find the total sales revenue. 
+ select sum( price * quantity) as total_revenue from sales ;
+
+ <img width="85" height="29" alt="image" src="https://github.com/user-attachments/assets/42767d20-7631-4341-86b8-785a9d55a4db" />
+
+Q 53 : Find the average sales amount. 
+ select avg(price * quantity) as avg_revenue from sales ;
+
+ <img width="85" height="34" alt="image" src="https://github.com/user-attachments/assets/8d03929a-dc80-472d-b221-28a2568c8961" />
+
+ Q 54 :  Find the maximum sales amount.
+ select max(price*quantity) as max_sales from sales ;
+
+ <img width="68" height="28" alt="image" src="https://github.com/user-attachments/assets/9f613722-f294-4c89-9860-6f5274343fb9" />
+
+Q 55 :Find the minimum sales amount.
+ select min(price*quantity) as min_sales from sales ;
+
+ <img width="68" height="31" alt="image" src="https://github.com/user-attachments/assets/62bc4e0a-69e1-4864-b227-8e7c77973b4e" />
+
+ Q 56 : Find the highest rating. 
+ select max(rating) from sales ;
+
+ <img width="83" height="28" alt="image" src="https://github.com/user-attachments/assets/1fa8c12a-bdaa-4f1b-a3a9-004ca2d405f9" />
+
+ Q 57 : Find the lowest rating. 
+ select min(rating) from sales ;
+
+ <img width="73" height="29" alt="image" src="https://github.com/user-attachments/assets/e6b98411-d337-48a3-8f9c-730eed20514e" />
+
+Q 58 : Find the average rating.
+ select avg(rating) from sales ;
+
+ <img width="74" height="29" alt="image" src="https://github.com/user-attachments/assets/e767d579-0b91-473b-8e55-d9559f577c73" />
+
+Q 59 :  Find the total quantity sold.
+ select sum(quantity) as total_quantity from sales;
+
+ <img width="81" height="29" alt="image" src="https://github.com/user-attachments/assets/4e481822-2bb7-46c6-b594-1b94db067076" />
+
+Q 60 :  Find the average quantity sold. 
+ select avg(quantity) from sales;
+
+ <img width="82" height="29" alt="image" src="https://github.com/user-attachments/assets/8c7117d7-6265-43aa-a406-5d822db69ff4" />
+
+Q 61 :  Find the maximum quantity sold. 
+ select  max(quantity) from sales;
+
+ <img width="87" height="29" alt="image" src="https://github.com/user-attachments/assets/5e0aa96a-0dfb-4bec-9837-3c9ea1c8fcea" />
+
+ Q 62 : Find the minimum quantity sold. 
+ select min(quantity) from sales ;
+
+ <img width="80" height="32" alt="image" src="https://github.com/user-attachments/assets/f620d38a-c4e0-4b20-a8ee-a91f03890a7a" />
+
+  Q 63 : Count the number of Electronics products.
+ select count(*) from sales where category ="electronics" ;
+
+ <img width="64" height="29" alt="image" src="https://github.com/user-attachments/assets/0a26b6c1-480b-4578-a19c-e38e038773c1" />
+
+Q 64 :  Count the number of Fashion products. 
+ select count(*) from sales where category ="fashion";
+
+ <img width="70" height="28" alt="image" src="https://github.com/user-attachments/assets/08c6b267-fb34-440a-b16f-18e32e686fa0" />
+
+Q 65 :  Count the number of Sports products. 
+ select count(*) from sales where category = 'sports' ;
+
+ <img width="68" height="31" alt="image" src="https://github.com/user-attachments/assets/82ccf099-d2be-44c6-aaeb-4453360f4a66" />
+
+Q 66 :  Convert all customer names to uppercase. 
+ select customer_name, upper(customer_name) from sales ;
+
+ <img width="184" height="154" alt="image" src="https://github.com/user-attachments/assets/878907d7-fc23-4af1-bbb4-1df032164696" />
+
+<img width="185" height="114" alt="image" src="https://github.com/user-attachments/assets/0df5db63-7154-45b4-a560-deb346ca326e" />
+
+Q 67 :  Convert all customer names to lowercase. 
+ select customer_name, lower(customer_name) from sales ;
+
+ <img width="184" height="155" alt="image" src="https://github.com/user-attachments/assets/d5c38fc2-621f-4d76-a45d-804a4861b2c0" />
+
+ <img width="186" height="114" alt="image" src="https://github.com/user-attachments/assets/ed2a7c11-3573-4e67-a1dd-a85cb395f800" />
+
+Q 68 :  Find the length of each customer name. 
+ select customer_name, length(customer_name) from sales ;
+
+ <img width="191" height="153" alt="image" src="https://github.com/user-attachments/assets/a264ab78-75b2-461b-b38b-6b30c68a1725" />
+
+<img width="183" height="117" alt="image" src="https://github.com/user-attachments/assets/a6d1809d-c33a-437b-9d10-317eb37e0afe" />
