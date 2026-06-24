@@ -186,8 +186,9 @@ select * from sales order by age DESC;
 
 Q 35 :  Sort products by rating in descending order.
 select * from sales order by rating DESC;
-<img width="590" height="130" alt="Screenshot 2026-06-24 192148" src="https://github.com/user-attachments/assets/2dadedb0-1daa-4aba-a940-44ba8fea949e" />
 <img width="594" height="140" alt="Screenshot 2026-06-24 192117" src="https://github.com/user-attachments/assets/2555821b-4a6a-4bde-ac4d-1236fab23224" />
+<img width="590" height="130" alt="Screenshot 2026-06-24 192148" src="https://github.com/user-attachments/assets/ba7fccae-4c4b-4ab2-b1f0-087dba2ef572" />
+
 
 
 
