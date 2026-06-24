@@ -189,6 +189,11 @@ select * from sales order by rating DESC;
 <img width="594" height="140" alt="Screenshot 2026-06-24 192117" src="https://github.com/user-attachments/assets/2555821b-4a6a-4bde-ac4d-1236fab23224" />
 <img width="590" height="130" alt="Screenshot 2026-06-24 192148" src="https://github.com/user-attachments/assets/ba7fccae-4c4b-4ab2-b1f0-087dba2ef572" />
 
+ Q 36 : Display the highest priced product. 
+select * from sales order by price DESC limit 1 ;
+<img width="584" height="38" alt="image" src="https://github.com/user-attachments/assets/183fa60b-8cfb-4047-9b4b-cbf0af7df895" />
+
+
 
 
 
