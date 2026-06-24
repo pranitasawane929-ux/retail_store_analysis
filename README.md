@@ -155,6 +155,41 @@ Q 28 :  Display products priced between 2000 and 10000.
 select * from sales where price between 2000 and 10000 ;
 <img width="596" height="132" alt="Screenshot 2026-06-24 190036" src="https://github.com/user-attachments/assets/8ccfaaf5-ed90-4847-8284-83206a368927" />
 
+Q 29 :  Display customers aged between 24 and 30.
+select * from sales where age between 24 and 30 ;
+<img width="599" height="209" alt="Screenshot 2026-06-24 190213" src="https://github.com/user-attachments/assets/611c8a04-a7b8-45df-ac7b-de1df8fe2e53" />
+
+Q 30 : Display orders placed after 20 January 2026.
+select * from sales where order_date >'2026-01-20';
+<img width="596" height="131" alt="Screenshot 2026-06-24 190656" src="https://github.com/user-attachments/assets/1cd6670e-3e08-41d2-ae0b-d69d6ec8f3a5" />
+
+
+Q 31 :  Sort products by price in ascending order.
+select * from sales order by price ASC;
+<img width="593" height="177" alt="Screenshot 2026-06-24 191001" src="https://github.com/user-attachments/assets/75624840-2920-4ee9-943c-a2afd17b8bcf" />
+<img width="590" height="88" alt="Screenshot 2026-06-24 191036" src="https://github.com/user-attachments/assets/89f8ec64-6019-4d22-af4b-4985444f9ea7" />
+
+ Q 32 :  Sort products by price in descending order.
+select * from sales order by price DESC;
+<img width="593" height="103" alt="Screenshot 2026-06-24 191437" src="https://github.com/user-attachments/assets/03480d05-8d16-4dbc-994c-eab529ddf8e2" />
+<img width="590" height="167" alt="Screenshot 2026-06-24 191352" src="https://github.com/user-attachments/assets/2c84620c-3926-4f49-9161-b90d92a1339e" />
+
+Q 33 :  Sort customers by age in ascending order. 
+select * from sales order by age ASC;
+<img width="591" height="104" alt="Screenshot 2026-06-24 191736" src="https://github.com/user-attachments/assets/229b31b9-caf3-4067-8b23-62fa2a925b57" />
+<img width="596" height="166" alt="Screenshot 2026-06-24 191700" src="https://github.com/user-attachments/assets/5853e1f9-7571-4c83-8528-30252e933d49" />
+
+Q 34 :  Sort customers by age in descending order.
+select * from sales order by age DESC;
+<img width="594" height="128" alt="Screenshot 2026-06-24 191943" src="https://github.com/user-attachments/assets/8d856460-c0b7-42ca-8788-c9a95e6336a8" />
+<img width="593" height="142" alt="Screenshot 2026-06-24 191933" src="https://github.com/user-attachments/assets/574b3d56-4b7d-401c-8dd3-bb0f3aaf2ec5" />
+
+Q 35 :  Sort products by rating in descending order.
+select * from sales order by rating DESC;
+<img width="590" height="130" alt="Screenshot 2026-06-24 192148" src="https://github.com/user-attachments/assets/2dadedb0-1daa-4aba-a940-44ba8fea949e" />
+<img width="594" height="140" alt="Screenshot 2026-06-24 192117" src="https://github.com/user-attachments/assets/2555821b-4a6a-4bde-ac4d-1236fab23224" />
+
+
 
 
 
