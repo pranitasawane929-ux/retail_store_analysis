@@ -135,6 +135,27 @@ Q 23 : Display all Cash transactions.
 select * from sales where payment_mode ="cash";
 <img width="581" height="67" alt="Screenshot 2026-06-24 184614" src="https://github.com/user-attachments/assets/f028f4eb-84da-4880-b6f7-209217e1bca6" />
 
+ Q 24 : Display Electronics products from Pune. 
+select * from sales where category ="electronics" and city ="pune";
+<img width="590" height="53" alt="Screenshot 2026-06-24 185703" src="https://github.com/user-attachments/assets/e17a7df8-bbb3-4b0e-8f4d-b2dff353f875" />
+
+Q 25 :  Display Fashion products from Mumbai.
+select * from sales where category ="fashion" and city ="mumbai";
+<img width="590" height="29" alt="Screenshot 2026-06-24 185800" src="https://github.com/user-attachments/assets/40eb8dcc-41a5-43f0-a7eb-c6c9ea2cdaa7" />
+
+Q 26 : Display Female customers from Delhi. 
+select * from sales where gender ="female" and city ='delhi';
+<img width="578" height="44" alt="Screenshot 2026-06-24 185850" src="https://github.com/user-attachments/assets/71cf2ea3-a7c6-4e08-827e-52cd267cbf49" />
+
+Q 27 : Display Male customers from Pune.
+select * from sales where gender ="male" and city ="pune";
+<img width="584" height="59" alt="Screenshot 2026-06-24 185945" src="https://github.com/user-attachments/assets/819fb26b-0e6c-489c-a750-3c6d521374f9" />
+
+Q 28 :  Display products priced between 2000 and 10000. 
+select * from sales where price between 2000 and 10000 ;
+<img width="596" height="132" alt="Screenshot 2026-06-24 190036" src="https://github.com/user-attachments/assets/8ccfaaf5-ed90-4847-8284-83206a368927" />
+
+
 
 
 
