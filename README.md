@@ -77,7 +77,10 @@ select * from sales where gender="female";
 
 10 :  Display customer name and rating.
 select customer_name, rating from sales;
-<img width="122" height="232" alt="Screenshot 2026-06-24 181846" src="https://github.com/user-attachments/assets/142260cc-b5ac-4f4a-b142-d3df571f002f" /> <img width="122" height="41" alt="Screenshot 2026-06-24 181930" src="https://github.com/user-attachments/assets/dc077576-bf20-404a-8780-772a67488500" />
+<img width="122" height="232" alt="Screenshot 2026-06-24 181846" src="https://github.com/user-attachments/assets/142260cc-b5ac-4f4a-b142-d3df571f002f" /> 
+<img width="122" height="41" alt="Screenshot 2026-06-24 181930" src="https://github.com/user-attachments/assets/dc077576-bf20-404a-8780-772a67488500" />
+
+
 
  11 : Display all customers from Pune. 
 select * from sales where city ="pune";
