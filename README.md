@@ -385,3 +385,280 @@ Q 73 : Remove extra spaces using TRIM().
 <img width="460" height="130" alt="image" src="https://github.com/user-attachments/assets/932b14e5-3238-4217-a0bd-4c4e0ab23403" />
 
 <img width="310" height="130" alt="image" src="https://github.com/user-attachments/assets/614e1a5f-1e28-44c9-b608-bb188ae99d88" />
+
+Q 74 : Display the first 3 letters of each customer name. 
+ select substring(customer_name,1,3) from sales ;
+
+ <img width="143" height="152" alt="image" src="https://github.com/user-attachments/assets/0ef7628a-2062-4711-9d72-fcdd3569d196" />
+
+<img width="140" height="115" alt="image" src="https://github.com/user-attachments/assets/236e3a51-19bf-4e4a-b182-04968aee42ac" />
+
+Q 75 :  Display the last 2 letters of each city name. 
+ select city ,substring( city, length(city)-1,3) from sales ;
+
+ <img width="185" height="194" alt="image" src="https://github.com/user-attachments/assets/572d0198-1db7-4dc8-a565-1f0d3820df6c" />
+
+<img width="179" height="86" alt="image" src="https://github.com/user-attachments/assets/9384b65a-8ed7-497d-ab24-248c0645c66d" />
+
+Q 76 : Round all prices.
+ select round(price) from sales ;
+
+ <img width="76" height="142" alt="image" src="https://github.com/user-attachments/assets/7cc737a3-4bb1-415f-9b86-7df46638a307" />
+
+<img width="74" height="124" alt="image" src="https://github.com/user-attachments/assets/1563ce3a-b031-4789-8db3-d7f1c35e0dbe" />
+
+Q 77 :  Apply CEIL() on prices. 
+ select ceil(price) from sales ;
+
+ <img width="66" height="140" alt="image" src="https://github.com/user-attachments/assets/c44a17ed-12c9-433b-8191-570ba6b28fd0" />
+
+<img width="64" height="130" alt="image" src="https://github.com/user-attachments/assets/a8ee7604-370b-47f8-aeab-2c2a11a4283c" />
+
+ Q 78 :  Apply FLOOR() on prices. 
+ select floor(price) from sales ;
+
+ <img width="68" height="143" alt="image" src="https://github.com/user-attachments/assets/7a52e621-c30a-4600-9c6c-c1f007388e49" />
+
+<img width="68" height="127" alt="image" src="https://github.com/user-attachments/assets/06d7a115-caa3-4fdb-a623-f0a2f1704c6a" />
+
+ Q 79 :  Find MOD(quantity,2).
+ select mod(quantity,2) from sales ;
+
+ <img width="86" height="218" alt="image" src="https://github.com/user-attachments/assets/1378e0ea-de86-4d3f-b928-ef50bacfdab9" />
+
+<img width="85" height="62" alt="image" src="https://github.com/user-attachments/assets/154fd0c8-0888-425a-92a4-1acc47fd8f96" />
+
+Q 80 :  Find MOD(quantity,3). 
+select mod(quantity,3) from sales ;
+
+<img width="85" height="158" alt="image" src="https://github.com/user-attachments/assets/9d911438-d910-42ed-ac33-125672482c81" />
+
+<img width="77" height="115" alt="image" src="https://github.com/user-attachments/assets/7f9b4b39-a638-47cf-b577-588e663034cb" />
+
+ Q 81 :  Display the current time. 
+select curtime() ;
+
+<img width="65" height="31" alt="image" src="https://github.com/user-attachments/assets/21b94930-acfa-4cb8-8643-683e5f483f2c" />
+
+Q 82 :  Display the current date.
+select curdate() ;
+
+<img width="74" height="32" alt="image" src="https://github.com/user-attachments/assets/6b2298b0-5a50-4a54-88ed-a9cb632f53d1" />
+
+ Q 83 :  Display the current timestamp. 
+select now() ;
+
+<img width="113" height="34" alt="image" src="https://github.com/user-attachments/assets/80cd16b6-6bb9-4cb6-92cd-90a90f85a21b" />
+
+Q 84 : Extract the year from order_date.
+select year(order_date) from sales ;
+
+<img width="95" height="230" alt="image" src="https://github.com/user-attachments/assets/ca2a7d57-fdcc-4021-9327-b324657c64f9" />
+
+<img width="96" height="50" alt="image" src="https://github.com/user-attachments/assets/35b0d027-27a7-4935-a7d1-6b746bff1191" />
+
+Q 85 : Extract the month from order_date. 
+select month(order_date) from sales ;
+
+<img width="100" height="230" alt="image" src="https://github.com/user-attachments/assets/db1ae691-fd83-4ab4-9ed0-2e329f6ed64a" />
+
+<img width="99" height="50" alt="image" src="https://github.com/user-attachments/assets/155caaad-26dc-4d3b-a578-4d264d93ad31" />
+
+Q 86 : Extract the day from order_date = 
+select day (order_date) from sales ;
+
+<img width="96" height="164" alt="image" src="https://github.com/user-attachments/assets/b7453733-0a83-4c73-ad5f-338f1617c594" />
+
+<img width="101" height="113" alt="image" src="https://github.com/user-attachments/assets/f9f6d6ce-4623-42d5-a20c-bd650cc45f9b" />
+
+Q 87 :  Display orders placed in January.
+select * from sales where month(order_date) =1;
+
+<img width="592" height="145" alt="image" src="https://github.com/user-attachments/assets/1d7b6643-bde8-4bed-941e-9f92a99b3d84" />
+
+<img width="594" height="127" alt="image" src="https://github.com/user-attachments/assets/67273654-5858-4e3b-a26f-fbcb3bff7c9f" />
+
+ Q 88 :  Display orders placed before 20 January 2026.
+select * from sales where order_date <'2026-01-20' ;
+
+<img width="593" height="146" alt="image" src="https://github.com/user-attachments/assets/9c74b7ca-7216-4eb6-a7bb-2ad98ae3d95a" />
+
+Q 89 : Display orders placed after 20 January 2026. 
+select * from sales where order_date >'2026-01-20' ;
+
+<img width="591" height="129" alt="image" src="https://github.com/user-attachments/assets/44ee082a-5fac-4d2d-a99f-cdae071b4244" />
+
+Q 90 :  Display the latest order date.
+select * from sales order by order_date DESC limit 1 ;
+
+<img width="577" height="31" alt="image" src="https://github.com/user-attachments/assets/db35414e-b191-418e-916f-53ea7bb3e602" />
+
+Q 91 : Update the city of Akash. 
+update sales set city ='mumbai' where sale_id= 1 ;
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+Q 92 :  Update the rating of Rahul. 
+update sales set rating =4.9 where customer_name ='rahul' ;
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+Q 93 :  Change all Card payments to UPI. 
+update sales set payment_mode ='UPI' where payment_mode ='card';
+Query OK, 8 rows affected (0.00 sec)
+Rows matched: 8  Changed: 8  Warnings: 0
+
+Q 94 :  Increase all product prices by 500. 
+update sales set price =price+ 500 ;
+Query OK, 20 rows affected (0.01 sec)
+Rows matched: 20  Changed: 20  Warnings: 0
+
+Q 95 : Decrease all product prices by 100. 
+update sales set price =price-100 ;
+Query OK, 20 rows affected (0.01 sec)
+Rows matched: 20  Changed: 20  Warnings: 0
+
+Q 96 : Change category Electronics to Gadgets.
+update sales set category = 'gadgets' where category ='electronics' ;
+Query OK, 7 rows affected (0.01 sec)
+Rows matched: 7  Changed: 7  Warnings: 0
+
+Q 97 : Change city Pune to Nagpur. 
+update sales set city='Nagpur' where city ='pune' ;
+Query OK, 5 rows affected (0.00 sec)
+Rows matched: 5  Changed: 5  Warnings: 0
+
+Q 98 :  Update the quantity of a selected product. 
+update sales set quantity =5 where product_name ='laptop' ;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Q 99 :  Update a product name. 
+update sales set product_name ='Hand bag' where product_name ='football' ;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Q 100 : Update a customer name.
+update sales set customer_name ='pranita' where customer_name ='karan' ;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Q 101 :  Delete a specific customer record.
+delete from sales where customer_name ='harsh' ;
+Query OK, 1 row affected (0.01 sec)
+
+Q 102 :  Delete all Sports category records. 
+delete from sales where category = 'sports' ;
+Query OK, 3 rows affected (0.01 sec)
+
+Q 103 :  Delete records with rating below 4.0. 
+delete from sales where rating <4.0 ;
+Query OK, 0 rows affected (0.00 sec)
+
+Q 104 : Delete all Cash payment records. 
+delete from sales where payment_mode ='cash';
+Query OK, 1 row affected (0.00 sec)
+
+ Q 105 : Delete records from Jaipur.
+delete from sales where city ='jaipur';
+Query OK, 2 rows affected (0.00 sec)
+
+Q 106 : Display city-wise order count. 
+select city,count(*) from sales group by city;
+<img width="98" height="68" alt="image" src="https://github.com/user-attachments/assets/cf94542e-b582-40f5-832f-8b6b28bc3ee9" />
+
+Q 107 :Display category-wise order count.
+select category, count(*) from sales group by category ;
+<img width="104" height="55" alt="image" src="https://github.com/user-attachments/assets/97ae9d8a-68cd-44b4-97b4-2728b75ef92e" />
+
+Q 108 :  Display payment mode-wise order count.
+select payment_mode ,count(*) from sales group by payment_mode ;
+<img width="130" height="29" alt="image" src="https://github.com/user-attachments/assets/6916c472-d418-47a4-ac26-9af40afd211f" />
+
+Q 109 : Display gender-wise order count. 
+select gender ,count(*) from sales group by gender ;
+<img width="98" height="41" alt="image" src="https://github.com/user-attachments/assets/b5e75a8d-9838-4bd9-8fd0-d8340bb66e09" />
+
+Q 110 :  Display city-wise total revenue.
+select city,sum(price * quantity) as total_revenue from sales group by city ;
+<img width="124" height="68" alt="image" src="https://github.com/user-attachments/assets/b7040d34-f1ff-4964-b28a-0fa8cb76b9f8" />
+
+ Q 111 :  Display category-wise total revenue. 
+select category, sum(price * quantity) as total_revenue from sales group by category ;
+<img width="126" height="54" alt="image" src="https://github.com/user-attachments/assets/9308c1c7-dd41-4d2f-a75f-0004b20716d7" />
+
+Q 112 :  Display payment mode-wise total revenue.
+select payment_mode, sum(price*quantity) as total_revenue from sales group by payment_mode;
+<img width="153" height="29" alt="image" src="https://github.com/user-attachments/assets/ef65da3f-e5c5-40ed-a4c0-78c26fa78b0a" />
+
+Q 113 :  Display city-wise average revenue.
+select city, avg(price*quantity) as avg_revenue from sales group by city;
+<img width="122" height="65" alt="image" src="https://github.com/user-attachments/assets/1131ebe0-5fc2-46dd-88de-24f5378b782c" />
+
+Q 114 : Display category-wise average revenue. 
+select category, avg(price * quantity) as avg_revenue from sales group by category;
+<img width="126" height="50" alt="image" src="https://github.com/user-attachments/assets/38e1c602-abda-4a62-ae14-6e18fef304ef" />
+
+ Q 115 :  Display city-wise maximum sale. 
+select city , max(price*quantity) as max_revenue from sales group by city;
+<img width="116" height="68" alt="image" src="https://github.com/user-attachments/assets/23e7f75b-1868-4cb4-bf02-328108b1817f" />
+
+ Q 116 :  Display city-wise minimum sale. 
+select city , min(price * quantity) as min_revenue from sales group by city ;
+<img width="115" height="67" alt="image" src="https://github.com/user-attachments/assets/7539a488-e9e9-4414-beda-ddbd72e15fe1" />
+
+Q 117 :  Display category-wise maximum sale. 
+select category , max(price * quantity)as max_revenue from sales group by category ;
+<img width="128" height="53" alt="image" src="https://github.com/user-attachments/assets/80f02eb7-f73e-4127-a205-6c27ac914bf9" />
+
+Q 118 :  Display category-wise minimum sale.
+select category , min(price * quantity) as min_revenue from sales group by category ;
+<img width="128" height="53" alt="image" src="https://github.com/user-attachments/assets/5617cdc2-0a74-46ff-8000-4122b4380908" />
+
+ Q 119 : Display city and category-wise revenue.
+select city,category , sum(price*quantity) as total_revenue from sales group by city,category ;
+<img width="163" height="130" alt="image" src="https://github.com/user-attachments/assets/a7babb7b-9e48-47ff-a2e5-fb68c8ca8445" />
+
+Q 120 : Display city and payment mode-wise revenue.
+select city,payment_mode ,sum(price*quantity) as total_revenue from sales group by city,payment_mode ;
+<img width="191" height="65" alt="image" src="https://github.com/user-attachments/assets/75339692-455b-414e-af29-d83653590ee4" />
+
+Q 121 : Display cities having total revenue greater than 50,000.
+select city, sum(price *quantity)as total_revenue from sales group by city having sum(price * quantity) > 50000;
+<img width="119" height="41" alt="image" src="https://github.com/user-attachments/assets/e4ba41ab-6785-4adf-97fe-d8c4bd7b34e9" />
+
+Q 122 : Display categories having total revenue greater than 60,000.
+select category , sum(price *quantity) as total_revenue from sales group by category having sum(price*quantity) >60000;
+<img width="127" height="26" alt="image" src="https://github.com/user-attachments/assets/7d5517de-3308-4268-a603-b6f7ce48f600" />
+
+Q 123 : Display cities having average sale greater than 10,000. 
+select city, avg(price * quantity) as avg_sales from sales group by city having sum(price * quantity) >10000;
+<img width="121" height="68" alt="image" src="https://github.com/user-attachments/assets/9bcdac7f-6d21-4e65-bda8-a9f40a7557de" />
+
+Q 124 :  Display categories having average rating greater than 4.5.
+select category ,avg(rating) from sales group by category having avg(rating) >4.5;
+<img width="116" height="40" alt="image" src="https://github.com/user-attachments/assets/d841fa62-ead7-49f2-a5d0-cc2fb6526251" />
+
+Q 125 : Display cities having more than 3 orders. 
+Select city ,count(*) from sales group by city having count(*) >3 ;
+<img width="103" height="38" alt="image" src="https://github.com/user-attachments/assets/be16c761-db1f-4549-ba61-83f16e744b53" />
+
+Q 126 :  Display categories having more than 2 orders.
+select category , count(*) from sales group by category having count(*)>2 ;
+<img width="108" height="40" alt="image" src="https://github.com/user-attachments/assets/cf0124fd-1465-4a3e-bc6a-aa40271e47f6" />
+
+Q 127 :  Display payment modes having more than 5 orders.
+select payment_mode , count(*) from sales group by payment_mode having count(*) >5 ;
+<img width="133" height="26" alt="image" src="https://github.com/user-attachments/assets/07d5d218-984d-4e16-919c-9a14f4c870e1" />
+
+Q 128 :  Display cities having maximum sale greater than 40,000.
+select city , max( price * quantity) as max_revenue from sales group by city having max(price*quantity) >40000;
+<img width="125" height="44" alt="image" src="https://github.com/user-attachments/assets/c6a58441-a87a-4cec-aaa0-4531a1cd44c1" />
+
+ Q 129 :  Display categories having minimum sale greater than 1,500.
+select category ,min(price *quantity) as min_revenue from sales group by category having min(price *quantity)>1500;
+<img width="123" height="55" alt="image" src="https://github.com/user-attachments/assets/4c7d3a70-21c3-47d0-9894-05f7e7a46275" />
+
+Q 130 : Display cities having average age greater than 25. 
+select city , avg(age) from sales group by city having avg(age) > 25;
+<img width="102" height="41" alt="image" src="https://github.com/user-attachments/assets/64ec5831-cafa-4728-af8f-353f8ca3ec18" />
