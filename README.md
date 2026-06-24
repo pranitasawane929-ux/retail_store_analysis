@@ -181,8 +181,8 @@ select * from sales order by age ASC;
 
 Q 34 :  Sort customers by age in descending order.
 select * from sales order by age DESC;
-<img width="594" height="128" alt="Screenshot 2026-06-24 191943" src="https://github.com/user-attachments/assets/8d856460-c0b7-42ca-8788-c9a95e6336a8" />
 <img width="593" height="142" alt="Screenshot 2026-06-24 191933" src="https://github.com/user-attachments/assets/574b3d56-4b7d-401c-8dd3-bb0f3aaf2ec5" />
+<img width="594" height="128" alt="Screenshot 2026-06-24 191943" src="https://github.com/user-attachments/assets/8d856460-c0b7-42ca-8788-c9a95e6336a8" />
 
 Q 35 :  Sort products by rating in descending order.
 select * from sales order by rating DESC;
