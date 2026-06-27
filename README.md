@@ -711,4 +711,49 @@ Q 141 :  Identify the city generating the highest revenue.
  select city, sum(price * quantity) as total_revenue from sales group by city order by sum(price * quantity) DESC limit 1 ;
  <img width="125" height="27" alt="image" src="https://github.com/user-attachments/assets/1d500cb2-518b-4561-a4be-58faa55fab13" />
 
+ Q 142 :  Identify the category generating the highest revenue.
+ select category, sum(price * quantity) as total_revenue from sales group by category order by sum(price * quantity) DESC limit 1;
+ <img width="131" height="31" alt="image" src="https://github.com/user-attachments/assets/cf52b539-1a98-424e-895a-4cafd57898d1" />
+
+  Q 143 :Find the most frequently used payment method.
+ select payment_mode, count(*) from sales group by payment_mode order by count(*) DESC limit 1 ;
+ <img width="134" height="29" alt="image" src="https://github.com/user-attachments/assets/f25a1145-c49d-4f47-a8ee-4d8ea3d8447e" />
+
+Q 144 :  Find the best-rated category.
+ select category , avg(rating) from sales group by category order by avg(rating) DESC limit 1 ;
+ <img width="122" height="35" alt="image" src="https://github.com/user-attachments/assets/001d9190-065f-41e3-a2bf-51ca66549d2b" />
+
+Q 145 : Find the highest spending customer.
+ select customer_name , sum(price * quantity) as total_revenue from sales group by customer_name order by sum(price * quantity) DESC limit 1;
+ <img width="153" height="28" alt="image" src="https://github.com/user-attachments/assets/f60b012c-098b-4ffc-a82d-cbf674fdd4f6" />
+
+Q 146 : Find the most popular product. 
+ select product_name , sum(quantity) from sales group by product_name order by sum(quantity) DESC limit 1;
+ <img width="150" height="31" alt="image" src="https://github.com/user-attachments/assets/c6bae972-b076-4500-b7b7-9f058e31eb60" />
+
+Q 147 :  Display the top 3 cities by revenue. 
+ select city, sum(price * quantity) as total_revenue from sales group by city order by sum(price * quantity) DESC limit 3;
+ <img width="122" height="56" alt="image" src="https://github.com/user-attachments/assets/cbb2899c-3ff8-472e-b915-bad6d45cd54b" />
+
+Q 148 :  Display the top 3 categories by revenue.
+ select category , sum(price * quantity)as total_revenue  from sales group by category order by sum(price *quantity) DESC limit 3;
+ <img width="131" height="57" alt="image" src="https://github.com/user-attachments/assets/e928f154-78d9-47ed-88ca-8b78cd66abae" />
+
+149 :  Generate a monthly sales summary report.
+ select date_format(order_date, '%y-%m') as order_month ,count(sale_id) , sum(price * quantity) as total_revenue from sales group by order_month;    
+ <img width="209" height="31" alt="image" src="https://github.com/user-attachments/assets/ac1ceb49-84f7-4db1-97a9-2cd9950bfab8" />
+
+Q 150 = Generate a complete business performance report using all concept learn so far
+SELECT
+    city,
+    category,
+    COUNT(sale_id) AS total_orders,
+    SUM(quantity) AS total_units_sold,
+    SUM(price * quantity) AS total_revenue,
+    AVG(rating) AS average_customer_rating
+FROM sales
+GROUP BY city, category
+ORDER BY total_revenue DESC;
+<img width="401" height="134" alt="image" src="https://github.com/user-attachments/assets/51f816d9-ddac-4a50-9183-6a64cab029ab" />
+
 
